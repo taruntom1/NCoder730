@@ -2,26 +2,6 @@
 
 NCoder730::NCoder730(spi_config cfg) : config(cfg)
 {
-    spi_init();
-}
-
-NCoder730::~NCoder730()
-{
-    ESP_ERROR_CHECK(spi_bus_remove_device(spi));
-    ESP_ERROR_CHECK(spi_bus_free(config.spi_host));
-}
-
-
-void NCoder730::GetRegisterDump(uint8_t values[9])
-{
-    for (size_t i = 0; i < 9; i++)
-    {
-        values[i] = readRegister(registers[i]);
-    }
-}
-
-void NCoder730::spi_init()
-{
     spi_bus_config_t buscfg = {
         .mosi_io_num = config.mosi_pin,
         .miso_io_num = config.miso_pin,
@@ -38,6 +18,20 @@ void NCoder730::spi_init()
     };
 
     ESP_ERROR_CHECK(spi_bus_add_device(config.spi_host, &devcfg, &spi));
+}
+
+NCoder730::~NCoder730()
+{
+    ESP_ERROR_CHECK(spi_bus_remove_device(spi));
+    ESP_ERROR_CHECK(spi_bus_free(config.spi_host));
+}
+
+void NCoder730::GetRegisterDump(uint8_t values[9])
+{
+    for (size_t i = 0; i < 9; i++)
+    {
+        values[i] = readRegister(registers[i]);
+    }
 }
 
 uint8_t NCoder730::readRegister(uint8_t reg)
@@ -104,7 +98,6 @@ double NCoder730::readAbsoluteAngle()
     angleInDegree = (angle * 360.0) / 65536.0;
     return angleInDegree;
 }
-
 
 uint16_t NCoder730::readAbsoluteAngleRaw16()
 {

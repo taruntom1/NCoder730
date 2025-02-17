@@ -15,7 +15,7 @@ extern "C" void app_main()
     spi_config config = {SPI2_HOST, GPIO_NUM_13, GPIO_NUM_11, GPIO_NUM_12, GPIO_NUM_10};
     NCoder730 sensor(config);
 
-    vTaskDelay(pdMS_TO_TICKS(10000));
+    vTaskDelay(pdMS_TO_TICKS(5000));
 
     std::cout << "Reading sensor registers:" << std::endl;
     uint8_t values[9];

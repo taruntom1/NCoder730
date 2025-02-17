@@ -38,8 +38,6 @@ private:
     spi_device_handle_t spi; /**< SPI device handle */
     spi_config config;       /**< SPI configuration */
 
-    void spi_init();
-
     /**
      * @brief Reads the SPI registers of NCoder730
      *
