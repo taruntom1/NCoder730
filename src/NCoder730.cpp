@@ -98,10 +98,6 @@ double NCoder730::readAbsoluteAngle()
     return angleInDegree;
 }
 
-uint16_t NCoder730::readAbsoluteAngleRaw()
-{
-    return readAbsoluteAngleRaw16();
-}
 
 uint16_t NCoder730::readAbsoluteAngleRaw16()
 {

@@ -17,8 +17,6 @@ extern "C" void app_main()
 
     vTaskDelay(pdMS_TO_TICKS(10000));
 
-    std::cout << "pulse per turn:" << sensor.getPulsePerTurn() << std::endl;
-
     std::cout << "Reading sensor registers:" << std::endl;
     uint8_t values[9];
     sensor.GetRegisterDump(values);
