@@ -5,6 +5,13 @@ NCoder730::NCoder730(spi_config cfg) : config(cfg)
     spi_init();
 }
 
+NCoder730::~NCoder730()
+{
+    ESP_ERROR_CHECK(spi_bus_remove_device(spi));
+    ESP_ERROR_CHECK(spi_bus_free(config.spi_host));
+}
+
+
 void NCoder730::GetRegisterDump(uint8_t values[9])
 {
     for (size_t i = 0; i < 9; i++)

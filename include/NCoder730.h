@@ -20,20 +20,23 @@
 #define MAG_FIELD_LEVEL_REG 0x1B
 #define FW_REG 0x0E
 
+/**
+ * @brief Structure to hold SPI configuration parameters
+ */
 struct spi_config
 {
-    spi_host_device_t spi_host;
-    gpio_num_t miso_pin;
-    gpio_num_t mosi_pin;
-    gpio_num_t clk_pin;
-    gpio_num_t cs_pin;
+    spi_host_device_t spi_host; /**< SPI host device */
+    gpio_num_t miso_pin;        /**< MISO pin number */
+    gpio_num_t mosi_pin;        /**< MOSI pin number */
+    gpio_num_t clk_pin;         /**< Clock pin number */
+    gpio_num_t cs_pin;          /**< Chip select pin number */
 };
 
 class NCoder730
 {
 private:
-    spi_device_handle_t spi;
-    spi_config config;
+    spi_device_handle_t spi; /**< SPI device handle */
+    spi_config config;       /**< SPI configuration */
 
     void spi_init();
 
@@ -45,24 +48,33 @@ private:
      */
     uint8_t readRegister(uint8_t address);
     /**
-     * @brief Writes the SPI registors of NCoder730
+     * @brief Writes the SPI registers of NCoder730
      *
      * @param address address into which value is to be written
      * @param value value that is to be written
-     * @return returns the value in the registor
+     * @return returns the value in the register
      */
     uint8_t writeRegister(uint8_t address, uint8_t value);
 
 public:
     uint8_t registers[9] = {0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x09, 0x1B};
 
+    /**
+     * @brief Constructor for NCoder730 class
+     *
+     * @param cfg Configuration parameters for SPI communication
+     */
     NCoder730(spi_config cfg);
+
+    /**
+     * @brief Destructor for NCoder730 class
+     */
+    ~NCoder730();
 
     void GetRegisterDump(uint8_t values[9]);
 
     /**
-     * @brief Function to write default configurations to the registors
-     *
+     * @brief Function to write default configurations to the registers
      */
     void writeDefaultConfigurations();
     /**
@@ -72,29 +84,29 @@ public:
      */
     double readAbsoluteAngle();
     /**
-     * @brief Reads the 16 bit Absolute Raw Angle Value
+     * @brief Reads the 16-bit Absolute Raw Angle Value
      *
-     * @return returns 16 bit raw absolute angle value
+     * @return returns 16-bit raw absolute angle value
      */
     uint16_t readAbsoluteAngleRaw16();
     /**
      * @brief Reads raw value of absolute angle with error check
      *
-     * @param error retreive error
+     * @param error retrieve error
      * @return return raw absolute value
      */
     uint16_t readAbsoluteAngleRaw(bool *error);
     /**
-     * @brief Reads raw value of absolute angle with 8bit resolution
+     * @brief Reads raw value of absolute angle with 8-bit resolution
      *
-     * @return returns 8 bit raw absolute value
+     * @return returns 8-bit raw absolute value
      */
     uint8_t readAbsoluteAngleRaw8();
     /**
      * @brief Converts raw absolute angle to degrees
      *
      * @param rawAngleDataBitLength data length of raw angle
-     * @param rawAngle 16-bit / 8bit raw absolute angle value
+     * @param rawAngle 16-bit / 8-bit raw absolute angle value
      * @return returns absolute angle in degrees
      */
     double convertRawAngleToDegree(uint8_t rawAngleDataBitLength, uint16_t rawAngle);
