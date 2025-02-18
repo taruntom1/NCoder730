@@ -1,0 +1,562 @@
+\doxysection{NCoder730 Class Reference}
+\hypertarget{class_n_coder730}{}\label{class_n_coder730}\index{NCoder730@{NCoder730}}
+
+
+{\ttfamily \#include $<$NCoder730.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_n_coder730_a2cc181ca6e80369c19729265c70a76b2}{NCoder730}} (\mbox{\hyperlink{structspi__config}{spi\+\_\+config}} cfg)
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{class_n_coder730}{NCoder730} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_n_coder730_a013c304a009fc475069ff6aeed654772}{\texorpdfstring{$\sim$}{\string~}\+NCoder730}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for \doxylink{class_n_coder730}{NCoder730} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_n_coder730_ac62725f60b8eba59df1d93cabf410ad6}{Get\+Register\+Dump}} (uint8\+\_\+t values\mbox{[}9\mbox{]})
+\item 
+void \mbox{\hyperlink{class_n_coder730_a9edc2c187b1c0cd4c43719a7000d6eca}{write\+Default\+Configurations}} ()
+\begin{DoxyCompactList}\small\item\em Function to write default configurations to the registers. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_n_coder730_a7e01b3b807c63ba96dccb1e5fb3672be}{read\+Absolute\+Angle}} ()
+\begin{DoxyCompactList}\small\item\em Reads absolute encoder angle. \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{class_n_coder730_aee82efab7dd2c4beadfbbc7862a56fec}{read\+Absolute\+Angle\+Raw16}} ()
+\begin{DoxyCompactList}\small\item\em Reads the 16-\/bit Absolute Raw Angle Value. \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{class_n_coder730_ade9788b48065c7b1be7d2e832fc11341}{read\+Absolute\+Angle\+Raw}} (bool \texorpdfstring{$\ast$}{*}error)
+\begin{DoxyCompactList}\small\item\em Reads raw value of absolute angle with error check. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{class_n_coder730_afc0b3c29621aefb96de8cd45c03c8fd9}{read\+Absolute\+Angle\+Raw8}} ()
+\begin{DoxyCompactList}\small\item\em Reads raw value of absolute angle with 8-\/bit resolution. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_n_coder730_a56428314c5806d337685c1e3079c8b5f}{convert\+Raw\+Angle\+To\+Degree}} (uint8\+\_\+t raw\+Angle\+Data\+Bit\+Length, uint16\+\_\+t raw\+Angle)
+\begin{DoxyCompactList}\small\item\em Converts raw absolute angle to degrees. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_n_coder730_aa0f54851a80ba558033a44eb866e3911}{set\+Zero\+Position}} (float angle)
+\begin{DoxyCompactList}\small\item\em Set the Zero Position of the \doxylink{class_n_coder730}{NCoder730}. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_n_coder730_af281afa27fe5e926ca343e9143b1d46b}{get\+Zero\+Position}} ()
+\begin{DoxyCompactList}\small\item\em Get the Zero Position Offset Angle of the \doxylink{class_n_coder730}{NCoder730}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_n_coder730_a92b426a622890cdd516b730f48ec95cf}{set\+BCTValue}} (uint8\+\_\+t bct\+\_\+value)
+\begin{DoxyCompactList}\small\item\em Set the value of BCT Settings the \doxylink{class_n_coder730}{NCoder730}. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{class_n_coder730_a02402d9f2169765376431d70965d4e72}{get\+BCTValue}} ()
+\begin{DoxyCompactList}\small\item\em Get the BCT settings of the \doxylink{class_n_coder730}{NCoder730}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_n_coder730_ad98888aacecbd1bdc39b4892dc8015f5}{set\+ETX}} (bool val)
+\begin{DoxyCompactList}\small\item\em Enable/\+Disable the Enable Trimming of X axis of the \doxylink{class_n_coder730}{NCoder730}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_n_coder730_a77f4384c84e286aac75a754ce5d0c337}{set\+ETY}} (bool val)
+\begin{DoxyCompactList}\small\item\em Enable/\+Disable the Enable Trimming of Y axis of the \doxylink{class_n_coder730}{NCoder730}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_n_coder730_aa309239ecd1aba327f623a0d120d5da8}{get\+ETX}} ()
+\begin{DoxyCompactList}\small\item\em Get the Enable Trimming of X axis of the \doxylink{class_n_coder730}{NCoder730}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_n_coder730_a1f503c334361a75bfd21d54a54e64f29}{get\+ETY}} ()
+\begin{DoxyCompactList}\small\item\em Get the Enable Trimming of Y axis of the \doxylink{class_n_coder730}{NCoder730}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_n_coder730_afdbf868deb18b03831e6780974f15c4f}{set\+Pulse\+Per\+Turn}} (uint16\+\_\+t ppr)
+\begin{DoxyCompactList}\small\item\em Set the Pulse Per Turn for \doxylink{class_n_coder730}{NCoder730}. \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{class_n_coder730_a923ba6e16b0147d925f1635cb0ae0f60}{get\+Pulse\+Per\+Turn}} ()
+\begin{DoxyCompactList}\small\item\em Get the Pulse Per Turn value of Incremental Encoder for \doxylink{class_n_coder730}{NCoder730}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_n_coder730_a88a90bf4dbb2ce94e001de5ea21ee9f1}{set\+Index\+Length}} (float length)
+\begin{DoxyCompactList}\small\item\em Set the Index Length. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_n_coder730_a4c0a3149405bc738d874d87c3d846fc3}{get\+Index\+Length}} ()
+\begin{DoxyCompactList}\small\item\em Get the Index Length. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_n_coder730_ac710d6a6ec9ab6dad57a45002a491b3d}{set\+Index\+Position}} (uint8\+\_\+t pos)
+\begin{DoxyCompactList}\small\item\em Set the Index Position with respect to channel A or B. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{class_n_coder730_ad58a77fd2bbe982af846aa9ebece45da}{get\+Index\+Position}} ()
+\begin{DoxyCompactList}\small\item\em Get the Index Position with respect to channel A or B. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_n_coder730_a64cb2be38ee7f8b1d1ecf6ec6e6136a6}{set\+Magnetic\+Field\+Low\+Threshold}} (uint8\+\_\+t MAGLT)
+\begin{DoxyCompactList}\small\item\em Set the Magnetic Field Low Threshold value for \doxylink{class_n_coder730}{NCoder730} Following values can be set\+: 26mT, 41mT, 56mT, 70mT ,84mT ,98mT ,112mT ,126mT. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_n_coder730_a2d759132990d113d6639c061f8e6e65e}{set\+Magnetic\+Field\+High\+Threshold}} (uint8\+\_\+t MAGHT)
+\begin{DoxyCompactList}\small\item\em Set the Magnetic Field High Threshold value for \doxylink{class_n_coder730}{NCoder730} Following values can be set\+: 20mT, 35mT, 50mT, 64mT ,78mT ,92mT ,106mT ,120mT. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{class_n_coder730_a579b6e751f45a30520c817c82e63db9a}{get\+Magnetic\+Field\+Low\+Threshold}} ()
+\begin{DoxyCompactList}\small\item\em Get the Magnetic Field Low Threshold of \doxylink{class_n_coder730}{NCoder730}. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{class_n_coder730_aaae5d72bed6e69caba4dd9706b9d9be7}{get\+Magnetic\+Field\+High\+Threshold}} ()
+\begin{DoxyCompactList}\small\item\em Get the Magnetic Field High Threshold of \doxylink{class_n_coder730}{NCoder730}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_n_coder730_ac4ea322adb1e4d69a256f1121d6d4043}{set\+Rotation\+Direction}} (bool dir)
+\begin{DoxyCompactList}\small\item\em Set the Rotation Direction for the \doxylink{class_n_coder730}{NCoder730}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_n_coder730_af8fcada9bc4ba2ab6a33d3d1f1ee20bc}{get\+Rotation\+Direction}} ()
+\begin{DoxyCompactList}\small\item\em Get the Rotation Direction of the \doxylink{class_n_coder730}{NCoder730}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_n_coder730_a08f2f351ae4f5d50922dd3286ea00713}{set\+Filter\+Window}} (uint8\+\_\+t filter\+\_\+window)
+\begin{DoxyCompactList}\small\item\em Set the Filter Window. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{class_n_coder730_ad850f4623e0c333331a4ebde30c9beb1}{get\+Filter\+Window}} ()
+\begin{DoxyCompactList}\small\item\em Get the value of the Filter Window settings of the \doxylink{class_n_coder730}{NCoder730}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_n_coder730_af97102247e64a417ebf4e3432066a058}{get\+Magnetic\+Field\+Low\+Level\+Status}} ()
+\begin{DoxyCompactList}\small\item\em Get the Magnetic Field Low Level Status of \doxylink{class_n_coder730}{NCoder730}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_n_coder730_ae24bc19e562f862aede25c4cc44d477a}{get\+Magnetic\+Field\+High\+Level\+Status}} ()
+\begin{DoxyCompactList}\small\item\em Get the Magnetic Field High Level Status of \doxylink{class_n_coder730}{NCoder730}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{class_n_coder730_a12d65e35efd91a554149d74095de288b}{registers}} \mbox{[}9\mbox{]} = \{0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x09, 0x1B\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{_n_coder730_8h_source_l00035}{35}} of file \mbox{\hyperlink{_n_coder730_8h_source}{NCoder730.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_n_coder730_a2cc181ca6e80369c19729265c70a76b2}\index{NCoder730@{NCoder730}!NCoder730@{NCoder730}}
+\index{NCoder730@{NCoder730}!NCoder730@{NCoder730}}
+\doxysubsubsection{\texorpdfstring{NCoder730()}{NCoder730()}}
+{\footnotesize\ttfamily \label{class_n_coder730_a2cc181ca6e80369c19729265c70a76b2} 
+NCoder730\+::\+NCoder730 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structspi__config}{spi\+\_\+config}}}]{cfg}{}\end{DoxyParamCaption})}
+
+
+
+Constructor for \doxylink{class_n_coder730}{NCoder730} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cfg} & Configuration parameters for SPI communication \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_n_coder730_a013c304a009fc475069ff6aeed654772}\index{NCoder730@{NCoder730}!````~NCoder730@{\texorpdfstring{$\sim$}{\string~}NCoder730}}
+\index{````~NCoder730@{\texorpdfstring{$\sim$}{\string~}NCoder730}!NCoder730@{NCoder730}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}NCoder730()}{\string~NCoder730()}}
+{\footnotesize\ttfamily \label{class_n_coder730_a013c304a009fc475069ff6aeed654772} 
+NCoder730\+::\texorpdfstring{$\sim$}{\string~}\+NCoder730 (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Destructor for \doxylink{class_n_coder730}{NCoder730} class. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_n_coder730_a56428314c5806d337685c1e3079c8b5f}\index{NCoder730@{NCoder730}!convertRawAngleToDegree@{convertRawAngleToDegree}}
+\index{convertRawAngleToDegree@{convertRawAngleToDegree}!NCoder730@{NCoder730}}
+\doxysubsubsection{\texorpdfstring{convertRawAngleToDegree()}{convertRawAngleToDegree()}}
+{\footnotesize\ttfamily \label{class_n_coder730_a56428314c5806d337685c1e3079c8b5f} 
+double NCoder730\+::convert\+Raw\+Angle\+To\+Degree (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{raw\+Angle\+Data\+Bit\+Length}{, }\item[{uint16\+\_\+t}]{raw\+Angle}{}\end{DoxyParamCaption})}
+
+
+
+Converts raw absolute angle to degrees. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em raw\+Angle\+Data\+Bit\+Length} & data length of raw angle \\
+\hline
+{\em raw\+Angle} & 16-\/bit / 8-\/bit raw absolute angle value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns absolute angle in degrees 
+\end{DoxyReturn}
+\Hypertarget{class_n_coder730_a02402d9f2169765376431d70965d4e72}\index{NCoder730@{NCoder730}!getBCTValue@{getBCTValue}}
+\index{getBCTValue@{getBCTValue}!NCoder730@{NCoder730}}
+\doxysubsubsection{\texorpdfstring{getBCTValue()}{getBCTValue()}}
+{\footnotesize\ttfamily \label{class_n_coder730_a02402d9f2169765376431d70965d4e72} 
+uint8\+\_\+t NCoder730\+::get\+BCTValue (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Get the BCT settings of the \doxylink{class_n_coder730}{NCoder730}. 
+
+\begin{DoxyReturn}{Returns}
+returns value of the BCT Register 
+\end{DoxyReturn}
+\Hypertarget{class_n_coder730_aa309239ecd1aba327f623a0d120d5da8}\index{NCoder730@{NCoder730}!getETX@{getETX}}
+\index{getETX@{getETX}!NCoder730@{NCoder730}}
+\doxysubsubsection{\texorpdfstring{getETX()}{getETX()}}
+{\footnotesize\ttfamily \label{class_n_coder730_aa309239ecd1aba327f623a0d120d5da8} 
+bool NCoder730\+::get\+ETX (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Get the Enable Trimming of X axis of the \doxylink{class_n_coder730}{NCoder730}. 
+
+\begin{DoxyReturn}{Returns}
+returns status of ETX 
+\end{DoxyReturn}
+\Hypertarget{class_n_coder730_a1f503c334361a75bfd21d54a54e64f29}\index{NCoder730@{NCoder730}!getETY@{getETY}}
+\index{getETY@{getETY}!NCoder730@{NCoder730}}
+\doxysubsubsection{\texorpdfstring{getETY()}{getETY()}}
+{\footnotesize\ttfamily \label{class_n_coder730_a1f503c334361a75bfd21d54a54e64f29} 
+bool NCoder730\+::get\+ETY (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Get the Enable Trimming of Y axis of the \doxylink{class_n_coder730}{NCoder730}. 
+
+\begin{DoxyReturn}{Returns}
+returns status of ETX 
+\end{DoxyReturn}
+\Hypertarget{class_n_coder730_ad850f4623e0c333331a4ebde30c9beb1}\index{NCoder730@{NCoder730}!getFilterWindow@{getFilterWindow}}
+\index{getFilterWindow@{getFilterWindow}!NCoder730@{NCoder730}}
+\doxysubsubsection{\texorpdfstring{getFilterWindow()}{getFilterWindow()}}
+{\footnotesize\ttfamily \label{class_n_coder730_ad850f4623e0c333331a4ebde30c9beb1} 
+uint8\+\_\+t NCoder730\+::get\+Filter\+Window (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Get the value of the Filter Window settings of the \doxylink{class_n_coder730}{NCoder730}. 
+
+\begin{DoxyReturn}{Returns}
+returns the value of filter window 
+\end{DoxyReturn}
+\Hypertarget{class_n_coder730_a4c0a3149405bc738d874d87c3d846fc3}\index{NCoder730@{NCoder730}!getIndexLength@{getIndexLength}}
+\index{getIndexLength@{getIndexLength}!NCoder730@{NCoder730}}
+\doxysubsubsection{\texorpdfstring{getIndexLength()}{getIndexLength()}}
+{\footnotesize\ttfamily \label{class_n_coder730_a4c0a3149405bc738d874d87c3d846fc3} 
+float NCoder730\+::get\+Index\+Length (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Get the Index Length. 
+
+\begin{DoxyReturn}{Returns}
+returns the length of index pulse with respect to A or B pulse length 
+\end{DoxyReturn}
+\Hypertarget{class_n_coder730_ad58a77fd2bbe982af846aa9ebece45da}\index{NCoder730@{NCoder730}!getIndexPosition@{getIndexPosition}}
+\index{getIndexPosition@{getIndexPosition}!NCoder730@{NCoder730}}
+\doxysubsubsection{\texorpdfstring{getIndexPosition()}{getIndexPosition()}}
+{\footnotesize\ttfamily \label{class_n_coder730_ad58a77fd2bbe982af846aa9ebece45da} 
+uint8\+\_\+t NCoder730\+::get\+Index\+Position (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Get the Index Position with respect to channel A or B. 
+
+\begin{DoxyReturn}{Returns}
+returns the value of pos which is as follows\+: 0 \+: index rising edge is aligned with the channel B falling edge 1 \+: index rising edge is aligned with the channel A rising edge 2 \+: index rising edge is aligned with the channel B rising edge 3 \+: index rising edge is aligned with the channel A falling edge 
+\end{DoxyReturn}
+\Hypertarget{class_n_coder730_ae24bc19e562f862aede25c4cc44d477a}\index{NCoder730@{NCoder730}!getMagneticFieldHighLevelStatus@{getMagneticFieldHighLevelStatus}}
+\index{getMagneticFieldHighLevelStatus@{getMagneticFieldHighLevelStatus}!NCoder730@{NCoder730}}
+\doxysubsubsection{\texorpdfstring{getMagneticFieldHighLevelStatus()}{getMagneticFieldHighLevelStatus()}}
+{\footnotesize\ttfamily \label{class_n_coder730_ae24bc19e562f862aede25c4cc44d477a} 
+bool NCoder730\+::get\+Magnetic\+Field\+High\+Level\+Status (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Get the Magnetic Field High Level Status of \doxylink{class_n_coder730}{NCoder730}. 
+
+\begin{DoxyReturn}{Returns}
+returns true if the magnetic field is above the high threshold. 
+
+returns false if the magnetic field is below the high threshold 
+\end{DoxyReturn}
+\Hypertarget{class_n_coder730_aaae5d72bed6e69caba4dd9706b9d9be7}\index{NCoder730@{NCoder730}!getMagneticFieldHighThreshold@{getMagneticFieldHighThreshold}}
+\index{getMagneticFieldHighThreshold@{getMagneticFieldHighThreshold}!NCoder730@{NCoder730}}
+\doxysubsubsection{\texorpdfstring{getMagneticFieldHighThreshold()}{getMagneticFieldHighThreshold()}}
+{\footnotesize\ttfamily \label{class_n_coder730_aaae5d72bed6e69caba4dd9706b9d9be7} 
+uint8\+\_\+t NCoder730\+::get\+Magnetic\+Field\+High\+Threshold (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Get the Magnetic Field High Threshold of \doxylink{class_n_coder730}{NCoder730}. 
+
+\begin{DoxyReturn}{Returns}
+returns the MGHT value (refer datasheet for more details) 
+\end{DoxyReturn}
+\Hypertarget{class_n_coder730_af97102247e64a417ebf4e3432066a058}\index{NCoder730@{NCoder730}!getMagneticFieldLowLevelStatus@{getMagneticFieldLowLevelStatus}}
+\index{getMagneticFieldLowLevelStatus@{getMagneticFieldLowLevelStatus}!NCoder730@{NCoder730}}
+\doxysubsubsection{\texorpdfstring{getMagneticFieldLowLevelStatus()}{getMagneticFieldLowLevelStatus()}}
+{\footnotesize\ttfamily \label{class_n_coder730_af97102247e64a417ebf4e3432066a058} 
+bool NCoder730\+::get\+Magnetic\+Field\+Low\+Level\+Status (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Get the Magnetic Field Low Level Status of \doxylink{class_n_coder730}{NCoder730}. 
+
+\begin{DoxyReturn}{Returns}
+returns true if the magnetic field is below the low threshold. 
+
+returns false if the magnetic field is above the low threshold 
+\end{DoxyReturn}
+\Hypertarget{class_n_coder730_a579b6e751f45a30520c817c82e63db9a}\index{NCoder730@{NCoder730}!getMagneticFieldLowThreshold@{getMagneticFieldLowThreshold}}
+\index{getMagneticFieldLowThreshold@{getMagneticFieldLowThreshold}!NCoder730@{NCoder730}}
+\doxysubsubsection{\texorpdfstring{getMagneticFieldLowThreshold()}{getMagneticFieldLowThreshold()}}
+{\footnotesize\ttfamily \label{class_n_coder730_a579b6e751f45a30520c817c82e63db9a} 
+uint8\+\_\+t NCoder730\+::get\+Magnetic\+Field\+Low\+Threshold (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Get the Magnetic Field Low Threshold of \doxylink{class_n_coder730}{NCoder730}. 
+
+\begin{DoxyReturn}{Returns}
+returns the MGLT value (refer datasheet for more details) 
+\end{DoxyReturn}
+\Hypertarget{class_n_coder730_a923ba6e16b0147d925f1635cb0ae0f60}\index{NCoder730@{NCoder730}!getPulsePerTurn@{getPulsePerTurn}}
+\index{getPulsePerTurn@{getPulsePerTurn}!NCoder730@{NCoder730}}
+\doxysubsubsection{\texorpdfstring{getPulsePerTurn()}{getPulsePerTurn()}}
+{\footnotesize\ttfamily \label{class_n_coder730_a923ba6e16b0147d925f1635cb0ae0f60} 
+uint16\+\_\+t NCoder730\+::get\+Pulse\+Per\+Turn (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Get the Pulse Per Turn value of Incremental Encoder for \doxylink{class_n_coder730}{NCoder730}. 
+
+\begin{DoxyReturn}{Returns}
+returns the PPR value 
+\end{DoxyReturn}
+\Hypertarget{class_n_coder730_ac62725f60b8eba59df1d93cabf410ad6}\index{NCoder730@{NCoder730}!GetRegisterDump@{GetRegisterDump}}
+\index{GetRegisterDump@{GetRegisterDump}!NCoder730@{NCoder730}}
+\doxysubsubsection{\texorpdfstring{GetRegisterDump()}{GetRegisterDump()}}
+{\footnotesize\ttfamily \label{class_n_coder730_ac62725f60b8eba59df1d93cabf410ad6} 
+void NCoder730\+::\+Get\+Register\+Dump (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{values}{\mbox{[}9\mbox{]}}\end{DoxyParamCaption})}
+
+\Hypertarget{class_n_coder730_af8fcada9bc4ba2ab6a33d3d1f1ee20bc}\index{NCoder730@{NCoder730}!getRotationDirection@{getRotationDirection}}
+\index{getRotationDirection@{getRotationDirection}!NCoder730@{NCoder730}}
+\doxysubsubsection{\texorpdfstring{getRotationDirection()}{getRotationDirection()}}
+{\footnotesize\ttfamily \label{class_n_coder730_af8fcada9bc4ba2ab6a33d3d1f1ee20bc} 
+bool NCoder730\+::get\+Rotation\+Direction (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Get the Rotation Direction of the \doxylink{class_n_coder730}{NCoder730}. 
+
+\begin{DoxyReturn}{Returns}
+returns true if the rotation direction is clockwise 
+
+returns false if the rotation direction is anticlockwise 
+\end{DoxyReturn}
+\Hypertarget{class_n_coder730_af281afa27fe5e926ca343e9143b1d46b}\index{NCoder730@{NCoder730}!getZeroPosition@{getZeroPosition}}
+\index{getZeroPosition@{getZeroPosition}!NCoder730@{NCoder730}}
+\doxysubsubsection{\texorpdfstring{getZeroPosition()}{getZeroPosition()}}
+{\footnotesize\ttfamily \label{class_n_coder730_af281afa27fe5e926ca343e9143b1d46b} 
+float NCoder730\+::get\+Zero\+Position (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Get the Zero Position Offset Angle of the \doxylink{class_n_coder730}{NCoder730}. 
+
+\begin{DoxyReturn}{Returns}
+returns zero position offset angle in degrees 
+\end{DoxyReturn}
+\Hypertarget{class_n_coder730_a7e01b3b807c63ba96dccb1e5fb3672be}\index{NCoder730@{NCoder730}!readAbsoluteAngle@{readAbsoluteAngle}}
+\index{readAbsoluteAngle@{readAbsoluteAngle}!NCoder730@{NCoder730}}
+\doxysubsubsection{\texorpdfstring{readAbsoluteAngle()}{readAbsoluteAngle()}}
+{\footnotesize\ttfamily \label{class_n_coder730_a7e01b3b807c63ba96dccb1e5fb3672be} 
+double NCoder730\+::read\+Absolute\+Angle (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Reads absolute encoder angle. 
+
+\begin{DoxyReturn}{Returns}
+return absolute\+\_\+angle in degrees 
+\end{DoxyReturn}
+\Hypertarget{class_n_coder730_ade9788b48065c7b1be7d2e832fc11341}\index{NCoder730@{NCoder730}!readAbsoluteAngleRaw@{readAbsoluteAngleRaw}}
+\index{readAbsoluteAngleRaw@{readAbsoluteAngleRaw}!NCoder730@{NCoder730}}
+\doxysubsubsection{\texorpdfstring{readAbsoluteAngleRaw()}{readAbsoluteAngleRaw()}}
+{\footnotesize\ttfamily \label{class_n_coder730_ade9788b48065c7b1be7d2e832fc11341} 
+uint16\+\_\+t NCoder730\+::read\+Absolute\+Angle\+Raw (\begin{DoxyParamCaption}\item[{bool \texorpdfstring{$\ast$}{*}}]{error}{}\end{DoxyParamCaption})}
+
+
+
+Reads raw value of absolute angle with error check. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em error} & retrieve error \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return raw absolute value 
+\end{DoxyReturn}
+\Hypertarget{class_n_coder730_aee82efab7dd2c4beadfbbc7862a56fec}\index{NCoder730@{NCoder730}!readAbsoluteAngleRaw16@{readAbsoluteAngleRaw16}}
+\index{readAbsoluteAngleRaw16@{readAbsoluteAngleRaw16}!NCoder730@{NCoder730}}
+\doxysubsubsection{\texorpdfstring{readAbsoluteAngleRaw16()}{readAbsoluteAngleRaw16()}}
+{\footnotesize\ttfamily \label{class_n_coder730_aee82efab7dd2c4beadfbbc7862a56fec} 
+uint16\+\_\+t NCoder730\+::read\+Absolute\+Angle\+Raw16 (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Reads the 16-\/bit Absolute Raw Angle Value. 
+
+\begin{DoxyReturn}{Returns}
+returns 16-\/bit raw absolute angle value 
+\end{DoxyReturn}
+\Hypertarget{class_n_coder730_afc0b3c29621aefb96de8cd45c03c8fd9}\index{NCoder730@{NCoder730}!readAbsoluteAngleRaw8@{readAbsoluteAngleRaw8}}
+\index{readAbsoluteAngleRaw8@{readAbsoluteAngleRaw8}!NCoder730@{NCoder730}}
+\doxysubsubsection{\texorpdfstring{readAbsoluteAngleRaw8()}{readAbsoluteAngleRaw8()}}
+{\footnotesize\ttfamily \label{class_n_coder730_afc0b3c29621aefb96de8cd45c03c8fd9} 
+uint8\+\_\+t NCoder730\+::read\+Absolute\+Angle\+Raw8 (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Reads raw value of absolute angle with 8-\/bit resolution. 
+
+\begin{DoxyReturn}{Returns}
+returns 8-\/bit raw absolute value 
+\end{DoxyReturn}
+\Hypertarget{class_n_coder730_a92b426a622890cdd516b730f48ec95cf}\index{NCoder730@{NCoder730}!setBCTValue@{setBCTValue}}
+\index{setBCTValue@{setBCTValue}!NCoder730@{NCoder730}}
+\doxysubsubsection{\texorpdfstring{setBCTValue()}{setBCTValue()}}
+{\footnotesize\ttfamily \label{class_n_coder730_a92b426a622890cdd516b730f48ec95cf} 
+void NCoder730\+::set\+BCTValue (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{bct\+\_\+value}{}\end{DoxyParamCaption})}
+
+
+
+Set the value of BCT Settings the \doxylink{class_n_coder730}{NCoder730}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bct\+\_\+value} & BCT value \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_n_coder730_ad98888aacecbd1bdc39b4892dc8015f5}\index{NCoder730@{NCoder730}!setETX@{setETX}}
+\index{setETX@{setETX}!NCoder730@{NCoder730}}
+\doxysubsubsection{\texorpdfstring{setETX()}{setETX()}}
+{\footnotesize\ttfamily \label{class_n_coder730_ad98888aacecbd1bdc39b4892dc8015f5} 
+void NCoder730\+::set\+ETX (\begin{DoxyParamCaption}\item[{bool}]{val}{}\end{DoxyParamCaption})}
+
+
+
+Enable/\+Disable the Enable Trimming of X axis of the \doxylink{class_n_coder730}{NCoder730}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & status of ETX \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_n_coder730_a77f4384c84e286aac75a754ce5d0c337}\index{NCoder730@{NCoder730}!setETY@{setETY}}
+\index{setETY@{setETY}!NCoder730@{NCoder730}}
+\doxysubsubsection{\texorpdfstring{setETY()}{setETY()}}
+{\footnotesize\ttfamily \label{class_n_coder730_a77f4384c84e286aac75a754ce5d0c337} 
+void NCoder730\+::set\+ETY (\begin{DoxyParamCaption}\item[{bool}]{val}{}\end{DoxyParamCaption})}
+
+
+
+Enable/\+Disable the Enable Trimming of Y axis of the \doxylink{class_n_coder730}{NCoder730}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & status of ETY \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_n_coder730_a08f2f351ae4f5d50922dd3286ea00713}\index{NCoder730@{NCoder730}!setFilterWindow@{setFilterWindow}}
+\index{setFilterWindow@{setFilterWindow}!NCoder730@{NCoder730}}
+\doxysubsubsection{\texorpdfstring{setFilterWindow()}{setFilterWindow()}}
+{\footnotesize\ttfamily \label{class_n_coder730_a08f2f351ae4f5d50922dd3286ea00713} 
+void NCoder730\+::set\+Filter\+Window (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{filter\+\_\+window}{}\end{DoxyParamCaption})}
+
+
+
+Set the Filter Window. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filter\+\_\+window} & value of the filter window \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_n_coder730_a88a90bf4dbb2ce94e001de5ea21ee9f1}\index{NCoder730@{NCoder730}!setIndexLength@{setIndexLength}}
+\index{setIndexLength@{setIndexLength}!NCoder730@{NCoder730}}
+\doxysubsubsection{\texorpdfstring{setIndexLength()}{setIndexLength()}}
+{\footnotesize\ttfamily \label{class_n_coder730_a88a90bf4dbb2ce94e001de5ea21ee9f1} 
+void NCoder730\+::set\+Index\+Length (\begin{DoxyParamCaption}\item[{float}]{length}{}\end{DoxyParamCaption})}
+
+
+
+Set the Index Length. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em length} & is the length of index pulse Four Possible values accepted\+: Index lenght is 0.\+5 times the A or B pulse length 1 times the A or B pulse length 1.\+5 times the A or B pulse length 2 times the A or B pulse length Refer Fig 26 Page No. 23 of MA730 IC datasheet for more details \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_n_coder730_ac710d6a6ec9ab6dad57a45002a491b3d}\index{NCoder730@{NCoder730}!setIndexPosition@{setIndexPosition}}
+\index{setIndexPosition@{setIndexPosition}!NCoder730@{NCoder730}}
+\doxysubsubsection{\texorpdfstring{setIndexPosition()}{setIndexPosition()}}
+{\footnotesize\ttfamily \label{class_n_coder730_ac710d6a6ec9ab6dad57a45002a491b3d} 
+void NCoder730\+::set\+Index\+Position (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{pos}{}\end{DoxyParamCaption})}
+
+
+
+Set the Index Position with respect to channel A or B. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & is value for setting rising edge of Index pulse with respect to A or B pulse 0 \+: index rising edge is aligned with the channel B falling edge 1 \+: index rising edge is aligned with the channel A rising edge 2 \+: index rising edge is aligned with the channel B rising edge 3 \+: index rising edge is aligned with the channel A falling edge \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_n_coder730_a2d759132990d113d6639c061f8e6e65e}\index{NCoder730@{NCoder730}!setMagneticFieldHighThreshold@{setMagneticFieldHighThreshold}}
+\index{setMagneticFieldHighThreshold@{setMagneticFieldHighThreshold}!NCoder730@{NCoder730}}
+\doxysubsubsection{\texorpdfstring{setMagneticFieldHighThreshold()}{setMagneticFieldHighThreshold()}}
+{\footnotesize\ttfamily \label{class_n_coder730_a2d759132990d113d6639c061f8e6e65e} 
+void NCoder730\+::set\+Magnetic\+Field\+High\+Threshold (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{MAGHT}{}\end{DoxyParamCaption})}
+
+
+
+Set the Magnetic Field High Threshold value for \doxylink{class_n_coder730}{NCoder730} Following values can be set\+: 20mT, 35mT, 50mT, 64mT ,78mT ,92mT ,106mT ,120mT. 
+
+\Hypertarget{class_n_coder730_a64cb2be38ee7f8b1d1ecf6ec6e6136a6}\index{NCoder730@{NCoder730}!setMagneticFieldLowThreshold@{setMagneticFieldLowThreshold}}
+\index{setMagneticFieldLowThreshold@{setMagneticFieldLowThreshold}!NCoder730@{NCoder730}}
+\doxysubsubsection{\texorpdfstring{setMagneticFieldLowThreshold()}{setMagneticFieldLowThreshold()}}
+{\footnotesize\ttfamily \label{class_n_coder730_a64cb2be38ee7f8b1d1ecf6ec6e6136a6} 
+void NCoder730\+::set\+Magnetic\+Field\+Low\+Threshold (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{MAGLT}{}\end{DoxyParamCaption})}
+
+
+
+Set the Magnetic Field Low Threshold value for \doxylink{class_n_coder730}{NCoder730} Following values can be set\+: 26mT, 41mT, 56mT, 70mT ,84mT ,98mT ,112mT ,126mT. 
+
+\Hypertarget{class_n_coder730_afdbf868deb18b03831e6780974f15c4f}\index{NCoder730@{NCoder730}!setPulsePerTurn@{setPulsePerTurn}}
+\index{setPulsePerTurn@{setPulsePerTurn}!NCoder730@{NCoder730}}
+\doxysubsubsection{\texorpdfstring{setPulsePerTurn()}{setPulsePerTurn()}}
+{\footnotesize\ttfamily \label{class_n_coder730_afdbf868deb18b03831e6780974f15c4f} 
+void NCoder730\+::set\+Pulse\+Per\+Turn (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{ppr}{}\end{DoxyParamCaption})}
+
+
+
+Set the Pulse Per Turn for \doxylink{class_n_coder730}{NCoder730}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ppr} & Pulse Per Revolution value of the Encoder in Incremental Mode ~\newline
+ CPR is 4 times PPR \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_n_coder730_ac4ea322adb1e4d69a256f1121d6d4043}\index{NCoder730@{NCoder730}!setRotationDirection@{setRotationDirection}}
+\index{setRotationDirection@{setRotationDirection}!NCoder730@{NCoder730}}
+\doxysubsubsection{\texorpdfstring{setRotationDirection()}{setRotationDirection()}}
+{\footnotesize\ttfamily \label{class_n_coder730_ac4ea322adb1e4d69a256f1121d6d4043} 
+void NCoder730\+::set\+Rotation\+Direction (\begin{DoxyParamCaption}\item[{bool}]{dir}{}\end{DoxyParamCaption})}
+
+
+
+Set the Rotation Direction for the \doxylink{class_n_coder730}{NCoder730}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dir} & direction value ~\newline
+ true -\/\texorpdfstring{$>$}{>} clockwise ~\newline
+ false-\/\texorpdfstring{$>$}{>} anticlockwise \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_n_coder730_aa0f54851a80ba558033a44eb866e3911}\index{NCoder730@{NCoder730}!setZeroPosition@{setZeroPosition}}
+\index{setZeroPosition@{setZeroPosition}!NCoder730@{NCoder730}}
+\doxysubsubsection{\texorpdfstring{setZeroPosition()}{setZeroPosition()}}
+{\footnotesize\ttfamily \label{class_n_coder730_aa0f54851a80ba558033a44eb866e3911} 
+void NCoder730\+::set\+Zero\+Position (\begin{DoxyParamCaption}\item[{float}]{angle}{}\end{DoxyParamCaption})}
+
+
+
+Set the Zero Position of the \doxylink{class_n_coder730}{NCoder730}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em angle} & offset angle in degrees for zero positioning \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_n_coder730_a9edc2c187b1c0cd4c43719a7000d6eca}\index{NCoder730@{NCoder730}!writeDefaultConfigurations@{writeDefaultConfigurations}}
+\index{writeDefaultConfigurations@{writeDefaultConfigurations}!NCoder730@{NCoder730}}
+\doxysubsubsection{\texorpdfstring{writeDefaultConfigurations()}{writeDefaultConfigurations()}}
+{\footnotesize\ttfamily \label{class_n_coder730_a9edc2c187b1c0cd4c43719a7000d6eca} 
+void NCoder730\+::write\+Default\+Configurations (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Function to write default configurations to the registers. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_n_coder730_a12d65e35efd91a554149d74095de288b}\index{NCoder730@{NCoder730}!registers@{registers}}
+\index{registers@{registers}!NCoder730@{NCoder730}}
+\doxysubsubsection{\texorpdfstring{registers}{registers}}
+{\footnotesize\ttfamily \label{class_n_coder730_a12d65e35efd91a554149d74095de288b} 
+uint8\+\_\+t NCoder730\+::registers\mbox{[}9\mbox{]} = \{0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x09, 0x1B\}}
+
+
+
+Definition at line \mbox{\hyperlink{_n_coder730_8h_source_l00058}{58}} of file \mbox{\hyperlink{_n_coder730_8h_source}{NCoder730.\+h}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{_n_coder730_8h}{NCoder730.\+h}}\end{DoxyCompactItemize}
