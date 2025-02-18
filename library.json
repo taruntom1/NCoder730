@@ -1,0 +1,13 @@
+{
+    "name": "NCoder730",
+    "version": "1.0.0",
+    "description": "A library for using NCoder730 with spi interface",
+    "keywords": ["NCoder730", "encoder"],
+    "authors": [
+      {
+        "name": "Tarun Tom",
+        "email": "taruntom1@gmail.com"
+      }
+    ],
+    "license": "MIT"
+  }
